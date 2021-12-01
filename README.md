@@ -1,2 +1,3 @@
 # IACC - Técnico nivel superior en análisis y programación computacional
-En este repositorio su subirá todo el código o la gran mayoría de código escrito en instituto IACC correspondiente a la carrera de técnico nivel superior en análisis y programación computacional
+
+En este repositorio se subirá todo el código o la gran mayoría del código escrito como estudiante de la carrera técnico de nivel superior en análisis y programación computacional del instituto IACC
