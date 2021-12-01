@@ -1,0 +1,35 @@
+:root {
+  --background-color: #222d2d;
+  --capitulo-color: #e0e0e0;
+  --titulo-color: #140eff;
+  --contenido-color: #0c780b;
+}
+
+body {
+  background-color: var(--background-color);
+}
+/* A todos los elementos hijos de body que no sean div, cambiar el estilo de la fuente */
+body > *:not(div) {
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+div {
+  background-color: var(--capitulo-color);
+  padding: 14px;
+  font-size: 17px;
+  display: flex;
+  justify-content: space-between;
+}
+
+h1 {
+  font-size: 24px;
+  color: var(--titulo-color);
+  margin-top: 24px;
+  margin-bottom: 24px;
+}
+
+p {
+  font-size: 18px;
+  color: var(--contenido-color);
+  font-weight: 500;
+}

@@ -1,0 +1,46 @@
+:root {
+  /* Variable o "custom property" para almacenar el color del encabezado */
+  --color-encabezado: #cc7722;
+}
+
+body {
+  padding: 20px 100px;
+}
+
+@media screen and (max-width: 768px) {
+  /* Se le añade un padding de 1rem (16px) para los 4 lados del body siempre y cuando el ancho de pantalla sea menor a 768px, de lo contrario el padding usado será el de la declaración de más arriba */
+  body {
+    padding: 1rem;
+  }
+}
+
+/* Estilos correspondientes a los capítulos 1 y 3 */
+div span {
+  cursor: pointer;
+}
+
+/* Mismos elementos de la anterior declaración, pero sólo aplica cuando el usuario pase el mouse encima */
+div span:hover {
+  text-decoration: underline;
+}
+
+/* Estilo correspondiente al encabezado pricipal */
+.page-header {
+  display: inline-block;
+  border-radius: 5px;
+  background: var(--color-encabezado);
+  color: #666;
+}
+
+/* Estilo del contenedor de las imágenes */
+.img-container {
+  display: flex;
+  justify-content: space-around;
+}
+
+/* Estilos de las imágenes. El border-radius de 50% hace redondear por completo el elemento, pero como el width es mayor al height, entonces su apariencia es como la de un elipse, tal cual se muestra en la tarea */
+img {
+  width: 180px;
+  height: 120px;
+  border-radius: 50%;
+}

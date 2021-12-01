@@ -1,0 +1,66 @@
+picture,
+img,
+source {
+  display: block;
+  width: 100%;
+}
+
+.borde-responsive {
+  border-width: 2px;
+  border-style: solid;
+  border-color: blue;
+
+  margin: 16px 0;
+  padding: 16px;
+  display: flex;
+}
+
+/* Cada responsive-div tendrá un flex: 1, lo que significa que todos van a ocupar el mismo ancho de manera perfecta, ya que su padre usa display: flex */
+.responsive-div {
+  flex: 1;
+  height: 100px;
+}
+
+/* Aplica un color violeta al PRIMER elemento que contiene la clase responsive-div */
+.responsive-div:nth-child(1) {
+  background-color: violet;
+}
+
+/* Aplica un color verde al SEGUNDO elemento que contiene la clase responsive-div */
+.responsive-div:nth-child(2) {
+  background-color: green;
+}
+
+/* Aplica un color amarillo al TERCER elemento que contiene la clase responsive-div */
+.responsive-div:nth-child(3) {
+  background-color: yellow;
+}
+
+.title-1 {
+  color: #00849c;
+}
+
+.title-2 {
+  color: blue;
+}
+
+.first {
+  color: red;
+}
+
+.orange {
+  color: orange;
+}
+
+.red {
+  color: red;
+  text-decoration: underline;
+}
+
+.blue {
+  color: blue;
+}
+
+.violet {
+  color: blueviolet;
+}

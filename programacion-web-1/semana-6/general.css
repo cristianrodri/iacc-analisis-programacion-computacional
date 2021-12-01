@@ -1,0 +1,36 @@
+body {
+  --bg-color: hsla(0, 54%, 20%, 0.8);
+
+  background: linear-gradient(var(--bg-color), var(--bg-color)),
+    url(../media/desktop.jpeg) no-repeat;
+  background-size: cover;
+  background-position: center;
+  margin: 0;
+  padding: 50px;
+}
+
+body::before {
+  content: 'Desktop';
+  position: absolute;
+  top: 10px;
+  left: 50%;
+  transform: translatex(-50%);
+  font-size: 20px;
+
+  color: rgb(255, 255, 255);
+}
+
+h1 {
+  color: rgb(241, 231, 231);
+  font-style: italic;
+}
+
+h2 {
+  color: #717171;
+}
+
+p {
+  font: normal 100%/1.5 Helvetica, Arial, Sans-serif;
+  color: #f3e8e8;
+  border: 1px solid currentColor;
+}

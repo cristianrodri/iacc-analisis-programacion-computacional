@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Control semana 4</title>
+  </head>
+  <body>
+    <!-- Ejercicio 1 -->
+    <h2>Ejercicio 1</h2>
+    <p id="numero-dado"></p>
+    <p id="suma"></p>
+
+    <!-- Ejercicio 2 -->
+    <h2>Ejercicio 2</h2>
+    <p id="objeto"></p>
+
+    <!-- Ejercicio 3 -->
+    <h2>Ejercicio 3</h2>
+    <p id="ejercicio-3"></p>
+
+    <script>
+      //////////////////////////////// EJERCICIO 1 ////////////////////////////////
+      let suma = 0
+      let numeroDado = 57
+      let numeros = [92, 28, 8, 23, 89, 25, 88, 20, 67, 97, 15, 34]
+
+      for (let i = 0; i < numeros.length; i++) {
+        if (numeros[i] < numeroDado) {
+          // se le suma el 28, 8, 23, 25, 20, 15 y 34 del arreglo de números
+          suma += numeros[i]
+        }
+      }
+
+      document.getElementById('numero-dado').textContent =
+        'El número dado es ' + numeroDado
+      document.getElementById('suma').textContent =
+        'La suma de los números menores de ' + numeroDado + ' es ' + suma
+
+      //////////////////////////////// EJERCICIO 2 ////////////////////////////////
+      const persona = {
+        nombre: 'Cristian',
+        apellido: 'Rodriguez',
+        edad: 29,
+        carrera: 'Técnico en análisis y programación computacional',
+        pasatiempo: 'programar'
+      }
+
+      document.getElementById('objeto').textContent =
+        'Mi nombre es ' +
+        persona.nombre +
+        ' ' +
+        persona.apellido +
+        ', tengo ' +
+        persona.edad +
+        ' años. Actualmente estudio ' +
+        persona.carrera +
+        ' y mi pasatiempo es ' +
+        persona.pasatiempo
+
+      //////////////////////////////// EJERCICIO 3 ////////////////////////////////
+      function jquery(query) {
+        return document.querySelector(query)
+      }
+
+      const $ = jquery
+
+      $('#ejercicio-3').textContent = 'Este es el ejercicio 3'
+    </script>
+  </body>
+</html>

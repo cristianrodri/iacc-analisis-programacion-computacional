@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1, shrink-to-fit=no"
+    />
+
+    <!-- Bootstrap CSS -->
+    <link
+      rel="stylesheet"
+      href="css/bootstrap.min.css"
+      crossorigin="anonymous"
+    />
+
+    <!-- Estilos propios -->
+    <link rel="stylesheet" href="css/styles.css" />
+
+    <title>Tarea Semana 8</title>
+  </head>
+  <body>
+    <!-- Utiliza clase de bootstrap clearfix -->
+    <div class="clearfix">
+      <!-- Ambos elementos usan las clases de bootstrap float-left y float-right -->
+      <span class="float-left">&laquo; Capítulo 1</span
+      ><span class="float-right">Capítulo 3 &raquo;</span>
+    </div>
+
+    <!-- Se reemplaza la etiqueta p por h1 para que sea más semántico. Además se le añade las siguientes clases:
+      - page-header: clase propia (ver styles.css)
+      - h3: clase de bootstrap que le da un tamaño de fuente específico
+      - my-3: clase de bootstrap que le da un margen especifico superior e inferior
+      - py-1: clase de bootstrap que le da un padding especifico superior e inferior
+      - px-2: clase de bootstrap que le da un padding especifico a la izquierda y a la derecha
+    -->
+    <h1 class="page-header h3 my-3 py-1 px-2">Capítulo dos</h1>
+    <p>Este es el contenido del capítulo 2 de este interesante libro</p>
+    <p>
+      Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque
+      blandit condimentum justo, ut commodo justo semper in. Suspendisse
+      tincidunt turpis nibh, vel gravida velit consectetur tempus. Aenean
+      placerat, sem eu tristique tempus, ex sem rhoncus lorem, Quisque
+      facilisis.Cras hendrerit lorem vitae dignissim iaculis. Maecenas
+      ultricies, elit rhoncus dignissim sodales.
+    </p>
+
+    <!-- Las 2 imágenes se envuleven en un contenedor que posee la clase de bootstrap my-3 para darle un margin superior e inferior. Además se le añade una clase propia llamada img-container (ver en styles.css) -->
+    <div class="my-3 img-container">
+      <!-- 
+        clases usadas:
+          - d-none: no muestra el elemento (clase de bootstrap)
+          - d-sm-block: muestra el elemento sólo y cuando el ancho de pantalla sea mayor a 576px
+       -->
+      <img
+        src="assets/imagen-1.jpeg"
+        alt="Imagen 1"
+        class="d-none d-sm-block"
+      />
+      <img src="assets/imagen-2.jpeg" alt="Imagen 2" />
+    </div>
+
+    <!-- Al div contenedor del iframe se le añade las clases seleccionadas para que tenga una relacion 21:9-->
+    <div class="embed-responsive embed-responsive-21by9">
+      <!-- La clase insertada en iframe es recomandada por bootstrap. Lo demás es código generado de youtube -->
+      <iframe
+        class="embed-responsive-item"
+        width="1520"
+        height="557"
+        src="https://www.youtube.com/embed/nyegoDinKs4"
+        title="YouTube video player"
+        frameborder="0"
+        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+        allowfullscreen
+      ></iframe>
+    </div>
+  </body>
+</html>

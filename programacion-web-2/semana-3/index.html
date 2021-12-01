@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Control Semana 3</title>
+  </head>
+  <body>
+    <h2>Ejercicio 1</h2>
+    <p id="ejercicio-1"></p>
+
+    <h2>Ejercicio 2</h2>
+    <p id="ejercicio-2"></p>
+
+    <h2>Ejercicio 3</h2>
+    <p id="ejercicio-3"></p>
+
+    <script>
+      // EJERCICIO 1
+      let comentario = 5 + 'mentarios'
+      document.getElementById('ejercicio-1').textContent = comentario
+
+      // EJERCICIO 2
+      let resultadoMulplicacion = 10 * 5
+      document.getElementById('ejercicio-2').textContent =
+        'La multiplicación entre 10 y 5 es ' + resultadoMulplicacion
+
+      // EJERCICIO 3
+      let edad = 29
+      let mensaje
+
+      if (edad >= 18) mensaje = 'usted es mayor de edad'
+      else mensaje = 'eres menor de edad'
+
+      document.getElementById('ejercicio-3').textContent =
+        'Tienes ' + edad + ' años, por lo tanto ' + mensaje
+    </script>
+  </body>
+</html>
