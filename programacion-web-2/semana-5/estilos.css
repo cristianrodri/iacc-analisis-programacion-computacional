@@ -1,0 +1,58 @@
+:root {
+  --color: 120;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Courier New', Courier, monospace;
+  background-color: hsl(var(--color), 21%, 20%);
+}
+
+/* ESTILOS DEL FORMULARIO */
+form {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 10px;
+}
+
+h2 {
+  color: hsl(var(--color), 21%, 80%);
+  text-align: center;
+}
+
+input {
+  padding: 10px 15px;
+  border: 5px solid transparent;
+  outline: none;
+}
+
+input:focus {
+  border-color: hsl(var(--color), 21%, 80%);
+}
+
+input[type='submit'] {
+  cursor: pointer;
+  background-color: hsl(var(--color), 21%, 50%);
+  transition: transform 0.2s;
+  border: none;
+}
+
+input[type='submit']:active {
+  transform: scale(1.1);
+}
+
+/* ESTILOS DE LOS RESULTADOS DEL FORMULARIO */
+.valores {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.valores p {
+  color: hsl(var(--color), 21%, 80%);
+  text-align: center;
+}
