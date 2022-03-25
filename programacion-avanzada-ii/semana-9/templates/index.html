@@ -1,0 +1,36 @@
+{% extends 'base.html' %}
+
+<!-- HEADER -->
+{% block head %}
+<title>Centro Comercial IACC</title>
+{% endblock %} {% block body %}
+
+<!-- BODY -->
+<div>
+  <h1 class="text-center my-3">Centro Comercial IACC</h1>
+  <img
+    class="w-100"
+    style="height: 400px"
+    src="https://images.squarespace-cdn.com/content/v1/53e3ed8ce4b027b8a4612d44/1433363541113-0EYUEOS2AJ966XGCH56K/Cerro+San+Cristobal+013.jpg?format=2500w"
+    alt="costanera center"
+  />
+
+  <p class="mt-2">Horarios: <strong>10:00 - 21:00</strong></p>
+  <p>
+    Este centro comercial cuenta con 5 pisos en los cuales están distribuidos
+    las siguientes categorias de tiendas:
+  </p>
+
+  <!-- Imprime todas las categorias obtenidas de la base de datos -->
+  <div class="list-group d-flex flex-column align-items-center">
+    {% for categoria in categorias %}
+    <a
+      href="/categorias/{{categoria[1]}}"
+      class="list-group-item list-group-item-action w-50 text-center"
+    >
+      {{categoria[1].capitalize()}}
+    </a>
+    {% endfor %}
+  </div>
+</div>
+{% endblock %}

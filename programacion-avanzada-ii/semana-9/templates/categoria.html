@@ -1,0 +1,29 @@
+{% extends 'base.html' %}
+
+<!-- HEADER -->
+{% block head %}
+<title>{{title.capitalize()}}</title>
+{% endblock %} {% block body %}
+
+<!-- BODY -->
+<div>
+  <h1 class="text-center">{{title.capitalize()}}</h1>
+  <hr />
+  <p>Volver al <a href="/" class="text-decoration-underline">Home</a></p> </p>
+
+  <h2 class="text-center">Tiendas</h2>
+
+  <div class="my-4 d-flex gap-2 justify-content-center">
+    {% for tienda in tiendas %}
+    <div class="card" style="width: 18rem;">
+      <img src="{{tienda[2]}}" class="card-img-top " alt="{{tienda[1]}}" style="height: 150px">
+      <div class="card-body">
+        <h5 class="card-title">{{tienda[1]}}</h5>
+        <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+        <a href="/tienda/{{tienda[0]}}" class="btn btn-primary">Ir a la tienda</a>
+      </div>
+    </div>
+    {% endfor %}
+  </div>
+</div>
+{% endblock %}

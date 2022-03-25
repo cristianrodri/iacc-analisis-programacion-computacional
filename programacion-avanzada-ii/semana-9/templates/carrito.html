@@ -1,0 +1,31 @@
+{% extends 'base.html' %}
+
+<!-- HEADER -->
+{% block head %}
+<title>Carrito</title>
+{% endblock %}
+
+<!-- BODY -->
+{% block body %}
+<div>
+  <h1 class="text-center">Carrito de compras</h1>
+  <hr />
+  <div class="d-flex justify-content-between align-items-center">
+    <p>Volver al <a href="/" class="text-decoration-underline">Home</a></p>
+  </div>
+
+  <h2 class="text-center">Productos</h2>
+
+  <div class="my-4 d-flex gap-2 justify-content-center">
+    <h1>producto 1</h1>
+    <h1>producto 2</h1>
+    <h1>producto 3</h1>
+  </div>
+</div>
+
+{% endblock %}
+
+<!-- SCRIPT -->
+{% block script %}
+<script src="../static/carrito.js"></script>
+{% endblock %}
