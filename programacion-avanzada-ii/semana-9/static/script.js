@@ -31,8 +31,6 @@ const agregarProductoLocalStorage = producto => {
   localStorage.setItem('productos', JSON.stringify(nuevoStorage))
 }
 
-const eliminarProductoLocalStorage = () => {}
-
 if (toastTrigger) {
   toastTrigger.addEventListener(
     'click',

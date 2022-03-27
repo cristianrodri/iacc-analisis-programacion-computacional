@@ -16,11 +16,26 @@
 
   <h2 class="text-center">Productos</h2>
 
-  <div class="my-4 d-flex gap-2 justify-content-center">
-    <h1>producto 1</h1>
-    <h1>producto 2</h1>
-    <h1>producto 3</h1>
-  </div>
+  <div
+    class="my-4 d-flex flex-wrap gap-2 justify-content-center"
+    id="cards-container"
+  ></div>
+
+  <div
+    id="total-pagar-container"
+    class="d-flex flex-column align-items-center"
+  ></div>
+</div>
+
+<!-- ALERTA QUE MUESTRA DESPUÉS DE PAGAR -->
+<div class="alert alert-success alert-dismissible fade" role="alert" id="alert">
+  Has pagado tus productos
+  <button
+    type="button"
+    class="btn-close"
+    data-bs-dismiss="alert"
+    aria-label="Close"
+  ></button>
 </div>
 
 {% endblock %}

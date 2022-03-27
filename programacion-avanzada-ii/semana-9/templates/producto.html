@@ -23,7 +23,10 @@
 
   <h2 class="text-center">Productos</h2>
 
-  <div class="my-4 d-flex gap-2 justify-content-center" id="liveToastTrigger">
+  <div
+    class="my-4 d-flex flex-wrap gap-2 justify-content-center"
+    id="liveToastTrigger"
+  >
     {% for producto in productos %}
     <div class="card" style="width: 18rem">
       <img
@@ -38,7 +41,7 @@
           class="card-text text-right h3 py-2 mt-auto"
           style="text-align: right"
         >
-          $ {{producto[3]}}
+          {{"$ {:,.0f}".format(producto[3]).replace(',', '.')}}
         </p>
         <div class="d-flex flex-column">
           <input

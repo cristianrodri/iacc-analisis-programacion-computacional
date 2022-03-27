@@ -6,12 +6,14 @@ database = db.Database()
 
 app = Flask(__name__)
 
+# Ruta principal
 @app.route("/")
 def homepage():
     nombres = database.obtenerCategorias()
 
     return render_template('index.html', categorias=nombres)
 
+# Ruta que muestra las tiendas de una categoría en específica
 @app.route("/categorias/<categoria>")
 def tiendas_por_categoria(categoria):
     # Obtiene una categoría
@@ -25,6 +27,7 @@ def tiendas_por_categoria(categoria):
 
     return render_template('categoria.html', title=categoria[0][1], tiendas=tiendas)
 
+# Ruta que muestra los productos de una tienda en específica
 @app.route("/tienda/<id_tienda>")
 def productos_por_tienda(id_tienda):
     tienda = database.obtenerTiendaPorId(id_tienda)
@@ -38,6 +41,7 @@ def productos_por_tienda(id_tienda):
 
     return render_template('producto.html', title=tienda[0][1], piso=tienda[0][3], productos=productos, categoria=categoria[0][1])
 
+# Ruta que muestra el carrito de compras
 @app.route("/carrito")
 def carrito():
     return render_template('carrito.html')
